@@ -160,7 +160,6 @@ ul {
 
 /*Containers*/
 .container-fluid {
-  margin-top: 20px;
   box-sizing: border-box;
   padding: 10px;
 
@@ -191,13 +190,13 @@ footer {
   box-sizing: border-box;
   padding: 1em;
   width: 100%;
-  margin-top: 30%;
+
 }
 
 
 footer li {
   display: inline-flex;
-  margin: 0.25em;
+  margin: 0.75em;
 }
 
 
