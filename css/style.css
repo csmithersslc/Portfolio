@@ -6,24 +6,18 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-
 img, 
 embed, 
 object, 
 video {
-    max-width: 100%
-
+    max-width: 100%;
 }
-
 nav a, 
 button {
     min-width: 48px;
     min-height: 48px;
     padding: 40px;
 }
-
-
 body, 
 html{
     background-color: lightgrey;
@@ -33,8 +27,6 @@ html{
     width: 100%;
     height: 100%;
 }
-
-
 h1, 
 h2, 
 h3, 
@@ -42,7 +34,6 @@ h4,
 h5 {
   margin: 0;
 }
-
 
 header, 
 nav, 
@@ -52,7 +43,45 @@ article,
 div {
   box-sizing: border-box;
 }
+/*Media Queries and sizing */
+/*Desktop and tablet*/
+@media only screen and (min-width: 768px) {
+}
+/*Mobile*/
+@media only screen and (max-width: 767px) {
+}
+/*Mobile portrait*/
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+      /*General Layout*/
 
+      /*Header*/
+      .header {
+        max-width: 75%;
+      }
+      /*Nav Bar*/
+      .collapse-navbar-collapse {
+        width: 20%;
+      }
+      .nav-navbar-nav {
+        width: 10%;
+      }
+      .active {
+        width: 20%;
+      }
+      .nav a {
+        max-width: 100%
+      }
+      /*Paragraph*/
+      .intro {
+        width: 75%;
+      }
+      /*Projects area*/
+      .row {
+        max-width: 33.33%;
+      }
+      .col-md-2 {
+        width: 100%;
+      }
 
 /*Header Classes*/
 .header {
@@ -61,15 +90,11 @@ div {
   text-transform: uppercase;
   transition: min-height 0.3s;
 }
-
-
 .header__inner {
   width: 100%;
   margin: auto;
   text-align: center;
 }
-
-
 .header__logo {
   height: 100px;
   margin: 20px 0;
@@ -78,8 +103,6 @@ div {
   border-width: 2px;
   border-radius: 100px;
 }
-
-
 .header__title {
   font-weight: 300;
   font-size: 4em;
@@ -87,23 +110,17 @@ div {
   display: inline-block;
   color: #212121;
 }
-
-
 .header__description {
   display: inline-block;
   color: #212121;
   margin: 0.5em;
 }
-
-
 /*Navigation Classes*/
 .nav__list {
   width: 100%;
   padding: 0;
   margin: 0;
 }
-
-
 .nav__item {
   box-sizing: border-box;
   display: inline-block;
@@ -113,15 +130,11 @@ div {
   padding: 24px;
   text-transform: uppercase;
 }
-
-
 .nav a {
   text-decoration: none;
   color: #616161;
   padding: 1.5em;
 }
-
-
 .nav a:hover {
   text-decoration: underline;
   color: #212121;
@@ -156,16 +169,11 @@ ul {
     display: block;
     margin: auto;
 }
-
-
 /*Containers*/
 .container-fluid {
   box-sizing: border-box;
   padding: 10px;
-
 }
-
-
 .row {
   box-sizing: border-box;
   display: inline-block;
@@ -175,31 +183,24 @@ ul {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   background-color: white;
 }
-
-
 .child-image {
   display: inline-block;
   width: 75px;
   height: 100px;
   margin: auto;
 }
-
-
 /*Footer Classes*/
 footer {
   box-sizing: border-box;
   padding: 1em;
   width: 100%;
-
 }
-
-
-footer li {
+footer-li {
   display: inline-flex;
   margin: 0.75em;
 }
-
-
-footer a {
+footer-a {
   text-decoration: none;
 }
+
+
