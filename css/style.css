@@ -6,32 +6,201 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-img, embed, object, video {
-    max-width: 100%
+img, 
+embed, 
+object, 
+video {
+    max-width: 100%;
 }
-
-nav a, button {
+nav a, 
+button {
     min-width: 48px;
     min-height: 48px;
     padding: 40px;
 }
-
-body, html{
+body, 
+html{
     background-color: lightgrey;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
 }
-
-h1, h2, h3, h4, h5 {
+h1, 
+h2, 
+h3, 
+h4, 
+h5 {
   margin: 0;
 }
 
-header, nav, footer, section, article, div {
+header, 
+nav, 
+footer, 
+section, 
+article, 
+div {
   box-sizing: border-box;
+}
+/*Media Queries and sizing */
+/*Desktop and tablet*/
+@media only screen and (min-width: 768px) {
+      /*General Layout*/
+      /*Slider*/
+      .slider img{
+        max-width: 100%;
+        height: 400px;
+      }
+      /*Paragraph*/
+      .intro {
+        width: 100%;
+      }
+      /*Projects area*/
+      .projects-box {
+        width: 100%;
+        display: inline-block;
+      }
+      .row {
+        float: left;
+        margin: auto;
+        width: 33%;
+      }
+      .col-md-2 {
+        height: 50%;
+        width: 50%;
+        margin: auto;
+      }
+      .col-md-2 img {
+        max-width: 250px; 
+        height: 250px;         
+      }
+}  
+/*Mobile Landscape*/
+@media only screen and (max-width: 767px) and (orientation:landscape) {
+      /*General Layout*/
+      .container-fluid {
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+      h2{
+        text-align: center;
+      }
+      /*Header*/
+      .header {
+        max-width: 100%;
+      }
+      /*Nav Bar*/
+      .nav navbar-nav {
+        width:100px;
+        display: inline-block;          
+      }
+      /*Slider*/
+      .slider{
+        max-width: 100%
+      }
+      /*Paragraph*/
+      .intro {
+        width: 100%;
+      }
+      /*Projects area*/
+      .projects-box {
+        width: 100%;
+      }
+      .row {
+        width: 100%;
+        height: 70%;
+      }
+      .row:hover {
+      background-color: #114040;
+      }
+      .col-md-2 {
+        height: 100%;
+        font-size: 12pt;
+        margin: auto;
+      }
+      .col-md-2 img {
+        width: 250px; 
+        height: 250px;         
+      }
+      /*Footer*/
+      .footer {
+        flex-wrap: wrap;
+        width: 100%;
+        font-size: 10pt;
+      }
+      .footer-li {
+        width:75px;
+        display:block;
+        text-align:center;
+        margin: auto;
+
+      }
+}
+
+/*Mobile portrait*/
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+      /*General Layout*/
+      .container-fluid {
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+      /*Header*/
+      .header {
+        max-width: 100%;
+      }
+      /*Nav Bar*/
+      .nav navbar-nav {
+        width:100px;
+        display: inline-block;          
+        text-align:center;
+      }
+      /*Slider*/
+      .slider{
+        max-width: 100%
+      }
+      /*Paragraph*/
+      .intro {
+        width: 100%;
+      }
+      /*Projects area*/
+      .projects-box {
+        width: 100%;
+        text-align: center;
+      }
+      .row {
+        display: inline-flex;
+        width: 100%;
+        height: 100%;
+      }
+      .row:hover {
+          background-color: #114040;
+      }
+      .col-md-2 {
+        height: 100%;
+        font-size: 12pt;
+        margin: auto; 
+      }
+      .col-md-2 h2 {
+        font-size: 12pt;
+      }
+      .col-md-2 img {
+        width: 100px; 
+        height: 100px;         
+      }
+      /*Footer*/
+      .footer {
+        flex-wrap: wrap;
+        width: 100%;
+        font-size: 10pt;
+      }
+      .footer-li {
+        width:75px;
+        display:block;
+        float: left;
+        text-align:left;
+
+      }
 }
 
 /*Header Classes*/
@@ -41,47 +210,37 @@ header, nav, footer, section, article, div {
   text-transform: uppercase;
   transition: min-height 0.3s;
 }
-
 .header__inner {
   width: 100%;
   margin: auto;
   text-align: center;
 }
-
 .header__logo {
   height: 100px;
-  margin: 1em;
+  margin: 20px 0;
   vertical-align: top;
-  margin-top: 12px;
-  border-style: solid;
-  border-color: black;
+  border: solid, black;
   border-width: 2px;
   border-radius: 100px;
 }
-
 .header__title {
   font-weight: 300;
   font-size: 4em;
   margin: 0.25em;
   display: inline-block;
   color: #212121;
-  direction: rtl;
 }
-
 .header__description {
   display: inline-block;
   color: #212121;
-  direction: rtl;
   margin: 0.5em;
 }
-
 /*Navigation Classes*/
 .nav__list {
   width: 100%;
   padding: 0;
   margin: 0;
 }
-
 .nav__item {
   box-sizing: border-box;
   display: inline-block;
@@ -91,17 +250,16 @@ header, nav, footer, section, article, div {
   padding: 24px;
   text-transform: uppercase;
 }
-
 .nav a {
   text-decoration: none;
   color: #616161;
   padding: 1.5em;
 }
-
 .nav a:hover {
   text-decoration: underline;
-  color: #212121;
+  color: #1B6868;
 }
+
 
 /*Lists Classes*/
 ul {
@@ -110,7 +268,6 @@ ul {
   padding: 0;
   margin: 0;
 }
-
 /*Intro*/
 .intro {
   box-sizing: border-box;
@@ -118,7 +275,6 @@ ul {
   padding: 1.5em;
   display: inline-flex;
 }
-
 /* Slider */
 .sliderPic {
     top: 230px;
@@ -131,42 +287,32 @@ ul {
 }
 /*Containers*/
 .container-fluid {
-  margin-top: 20px;
   box-sizing: border-box;
   padding: 10px;
-
+  text-align: center;
 }
 .row {
   box-sizing: border-box;
-  display: inline-block;
-  margin-left: 1%;
-  width: 30%;
-  text-align: center;
+  margin-top: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   background-color: white;
 }
-
-.child-image {
-  width: 100px;
-  height: 100px;
-  margin: auto;
-  background-color: grey;
+.row:hover {
+  background-color: #114040;
 }
-
+.child-image {
+  width: 100%; 
+  height: auto;
+}
+.description {
+  text-align: center;
+}
 /*Footer Classes*/
 footer {
-
-  box-sizing: border-box;
-  padding: 1em;
   width: 100%;
-  margin-top: 30%;
 }
-
-footer li {
-  display: inline-flex;
-  margin: 0.25em;
-}
-
 footer a {
   text-decoration: none;
 }
+
+
