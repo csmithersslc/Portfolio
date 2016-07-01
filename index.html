@@ -4,14 +4,11 @@
 <head>
     <title>Christina Smithers | Portfolio</title>
     <!--Main Setups for viewers -->
-    <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <!--Bootstrap-->
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js">
-    </script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -27,7 +24,7 @@
     </div>
     <!--Navigating Links-->
     <div class="container-fluid">
-        <div id="navbar" class="collapse navbar-collapse">
+        <nav id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="active">
                     <a href="#">Home
@@ -42,7 +39,7 @@
                     </a>
                 </li>
             </ul>
-        </div>
+        </nav>
     </div>
     <!--/.nav-collapse -->
     <!--Slider-->
@@ -58,7 +55,9 @@
         </p>
     </div>
     <!--Projects-->
-    <h2><strong>Projects</strong></h2>
+    <div class="container-fluid">
+        <h2><strong>Projects</strong></h2>
+    </div>
     <div class="container-fluid">
       <div class="projects-box">
         <div class="row">
@@ -66,7 +65,7 @@
                 <h3>Bot</h3>
                 <div class="child-image">
                     <a href="https://github.com/csmithersslc/MegaBaciBot">
-                        <img src="images/bot.jpg" alt="bot">
+                        <img class="img-responsive" src="images/bot.jpg" alt="bot">
                     </a>
                 </div>
                   <div class="description">Simple Twitter bot.
@@ -78,7 +77,7 @@
                 <h3>Texts</h3>
                   <div class="child-image">
                       <a href="https://github.com/csmithersslc/sendTexts">
-                          <img src="images/Texting.jpg" alt="Texting">
+                          <img class="img-respsonsive" src="images/Texting.jpg" alt="Texting">
                       </a>
                   </div>
                     <div class="description">Texting with Twilio.
@@ -90,7 +89,7 @@
                 <h3>Movies</h3>
                 <div class="child-image">
                     <a href="https://github.com/csmithersslc/MovieTrailers">
-                        <img src="images/movie.jpg" alt="cam">
+                        <img class= "img-responsive" src="images/movie.jpg" alt="cam">
                     </a>
                   </div>
                     <div class="description">Movie trailers site.
@@ -121,5 +120,4 @@
             </ul>
         </footer>
     </div>
-
 </html>
