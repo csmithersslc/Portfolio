@@ -43,6 +43,7 @@ article,
 div {
   box-sizing: border-box;
 }
+
 /*Media Queries and sizing */
 /*Desktop and tablet*/
 @media only screen and (min-width: 768px) {
@@ -75,9 +76,11 @@ div {
         max-width: 250px; 
         height: 250px;         
       }
-}  
+} 
+
 /*Mobile Landscape*/
 @media only screen and (max-width: 767px) and (orientation:landscape) {
+
       /*General Layout*/
       .container-fluid {
         max-width: 100%;
@@ -86,23 +89,28 @@ div {
       h2{
         text-align: center;
       }
+
       /*Header*/
       .header {
         max-width: 100%;
       }
+
       /*Nav Bar*/
       .nav navbar-nav {
         width:100px;
         display: inline-block;          
       }
+
       /*Slider*/
       .slider{
         max-width: 100%
       }
+
       /*Paragraph*/
       .intro {
         width: 100%;
       }
+
       /*Projects area*/
       .projects-box {
         width: 100%;
@@ -140,6 +148,7 @@ div {
 
 /*Mobile portrait*/
 @media only screen and (max-width: 767px) and (orientation: portrait) {
+
       /*General Layout*/
       .container-fluid {
         max-width: 100%;
@@ -149,20 +158,24 @@ div {
       .header {
         max-width: 100%;
       }
+
       /*Nav Bar*/
       .nav navbar-nav {
         width:100px;
         display: inline-block;          
         text-align:center;
       }
+
       /*Slider*/
       .slider{
         max-width: 100%
       }
+
       /*Paragraph*/
       .intro {
         width: 100%;
       }
+
       /*Projects area*/
       .projects-box {
         width: 100%;
@@ -188,6 +201,7 @@ div {
         width: 100px; 
         height: 100px;         
       }
+
       /*Footer*/
       .footer {
         flex-wrap: wrap;
@@ -235,6 +249,7 @@ div {
   color: #212121;
   margin: 0.5em;
 }
+
 /*Navigation Classes*/
 .nav__list {
   width: 100%;
@@ -260,7 +275,6 @@ div {
   color: #1B6868;
 }
 
-
 /*Lists Classes*/
 ul {
   display: inline-flex;
@@ -268,6 +282,7 @@ ul {
   padding: 0;
   margin: 0;
 }
+
 /*Intro*/
 .intro {
   box-sizing: border-box;
@@ -275,6 +290,7 @@ ul {
   padding: 1.5em;
   display: inline-flex;
 }
+
 /* Slider */
 .sliderPic {
     top: 230px;
@@ -285,6 +301,7 @@ ul {
     display: block;
     margin: auto;
 }
+
 /*Containers*/
 .container-fluid {
   box-sizing: border-box;
@@ -307,6 +324,7 @@ ul {
 .description {
   text-align: center;
 }
+
 /*Footer Classes*/
 footer {
   width: 100%;
