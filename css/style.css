@@ -6,12 +6,14 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 img, 
 embed, 
 object, 
 video {
     max-width: 100%;
 }
+
 nav a, 
 button {
     min-width: 48px;
@@ -27,6 +29,7 @@ html{
     width: 100%;
     height: 100%;
 }
+
 h1, 
 h2, 
 h3, 
@@ -53,25 +56,30 @@ div {
         max-width: 100%;
         height: 400px;
       }
+
       /*Paragraph*/
       .intro {
         width: 100%;
       }
+
       /*Projects area*/
       .projects-box {
         width: 100%;
         display: inline-block;
       }
+
       .row {
         float: left;
         margin: auto;
         width: 33%;
       }
+
       .col-md-2 {
         height: 50%;
         width: 50%;
         margin: auto;
       }
+
       .col-md-2 img {
         max-width: 250px; 
         height: 250px;         
@@ -86,6 +94,7 @@ div {
         max-width: 100%;
         flex-wrap: wrap;
       }
+
       h2{
         text-align: center;
       }
@@ -115,28 +124,34 @@ div {
       .projects-box {
         width: 100%;
       }
+
       .row {
         width: 100%;
         height: 70%;
       }
+
       .row:hover {
       background-color: #114040;
       }
+
       .col-md-2 {
         height: 100%;
         font-size: 12pt;
         margin: auto;
       }
+
       .col-md-2 img {
         width: 250px; 
         height: 250px;         
       }
+
       /*Footer*/
       .footer {
         flex-wrap: wrap;
         width: 100%;
         font-size: 10pt;
       }
+
       .footer-li {
         width:75px;
         display:block;
@@ -154,6 +169,7 @@ div {
         max-width: 100%;
         flex-wrap: wrap;
       }
+
       /*Header*/
       .header {
         max-width: 100%;
@@ -181,22 +197,27 @@ div {
         width: 100%;
         text-align: center;
       }
+
       .row {
         display: inline-flex;
         width: 100%;
         height: 100%;
       }
+
       .row:hover {
           background-color: #114040;
       }
+
       .col-md-2 {
         height: 100%;
         font-size: 12pt;
         margin: auto; 
       }
+
       .col-md-2 h2 {
         font-size: 12pt;
       }
+
       .col-md-2 img {
         width: 100px; 
         height: 100px;         
@@ -208,6 +229,7 @@ div {
         width: 100%;
         font-size: 10pt;
       }
+
       .footer-li {
         width:75px;
         display:block;
@@ -224,11 +246,13 @@ div {
   text-transform: uppercase;
   transition: min-height 0.3s;
 }
+
 .header__inner {
   width: 100%;
   margin: auto;
   text-align: center;
 }
+
 .header__logo {
   height: 100px;
   margin: 20px 0;
@@ -237,6 +261,7 @@ div {
   border-width: 2px;
   border-radius: 100px;
 }
+
 .header__title {
   font-weight: 300;
   font-size: 4em;
@@ -244,6 +269,7 @@ div {
   display: inline-block;
   color: #212121;
 }
+
 .header__description {
   display: inline-block;
   color: #212121;
@@ -256,6 +282,7 @@ div {
   padding: 0;
   margin: 0;
 }
+
 .nav__item {
   box-sizing: border-box;
   display: inline-block;
@@ -265,11 +292,13 @@ div {
   padding: 24px;
   text-transform: uppercase;
 }
+
 .nav a {
   text-decoration: none;
   color: #616161;
   padding: 1.5em;
 }
+
 .nav a:hover {
   text-decoration: underline;
   color: #1B6868;
@@ -308,29 +337,40 @@ ul {
   padding: 10px;
   text-align: center;
 }
+
 .row {
   box-sizing: border-box;
   margin-top: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   background-color: white;
 }
+
 .row:hover {
   background-color: #114040;
 }
-.child-image {
-  width: 100%; 
-  height: auto;
-}
+
 .description {
   text-align: center;
+}
+
+/*Images*/
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /*Footer Classes*/
 footer {
   width: 100%;
 }
+
 footer a {
   text-decoration: none;
+}
+
+li.footer-li {
+    margin-right: 10px;
 }
 
 
