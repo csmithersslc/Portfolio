@@ -114,9 +114,6 @@ div {
         width: 100%;
         height: 70%;
     }
-    .row:hover {
-        background-color: grey;
-    }
     .col-md-2 {
         height: 100%;
         font-size: 12pt;
@@ -126,6 +123,7 @@ div {
         display: block;
         max-width: 100%;
         height: auto;
+        margin: auto;
     }
     /*Footer*/
     
@@ -178,9 +176,6 @@ div {
         display: inline-flex;
         width: 100%;
         height: 100%;
-    }
-    .row:hover {
-        background-color: grey;
     }
     .col-md-2 {
         height: 100%;
